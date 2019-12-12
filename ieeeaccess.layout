@@ -1,0 +1,80 @@
+#% Do not delete the line below; configure depends on this      
+#  \DeclareLaTeXClass[ieeeaccess]{IEEE Access}
+
+# Read the definitions from IEEEtran.layout
+Input IEEEtran.layout
+
+SecNumDepth	3
+
+Style Abstract
+  InTitle	1
+End
+
+Style Address
+  LaTeXName	address
+  InTitle	1
+End
+
+Style Keywords
+  InTitle	1
+End
+
+Style FootNote  
+  Margin	Static
+  LatexType	Command
+  Category	FrontMatter
+  InTitle	1
+  Argument 1
+    Mandatory	1
+    AutoInsert	1
+    LabelString	"Foot Note"
+    InsertCotext 1
+  EndArgument
+  LatexName	tfootnote
+  Font
+    Size	Small
+  EndFont
+End
+
+Style CorAuthor  
+  Margin	Static
+  LatexType	Command
+  Category	FrontMatter
+  InTitle	1
+  Argument 1
+    Mandatory	1
+    AutoInsert	1
+    LabelString	"Corresponding Author"
+    InsertCotext 1
+  EndArgument
+  LatexName	corresp
+  Font
+    Size	Large
+  EndFont
+End
+
+InsetLayout Flex:History
+  CopyStyle	Flex:Author_Name
+  LaTeXName	history
+  LabelString	"History"
+  Font
+    Size	Normal
+  EndFont
+  LabelFont
+    Color	blue
+    Size	Small
+  EndFont
+End
+
+InsetLayout Flex:DOI
+  CopyStyle	Flex:Author_Name
+  LaTeXName	doi
+  LabelString	"DOI"
+  Font
+    Size	Normal
+  EndFont
+  LabelFont
+    Color	blue
+    Size	Small
+  EndFont
+End
