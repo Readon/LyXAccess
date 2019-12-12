@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass "../../我的坚果云/Thesis/sample rate selecting/ieeeaccess"
+\textclass ieeeaccess
 \begin_preamble
 
 \usepackage{algorithmic}
@@ -1056,7 +1056,7 @@ status collapsed
 
 
 \begin_inset Graphics
-	filename logo.png
+	filename Logo.png
 	width 1.01597in
 	height 1.34722in
 
